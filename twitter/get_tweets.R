@@ -10,11 +10,6 @@
 library(twitteR)
 library(tidyverse)
 
-consumer_key = "xxx"
-consumer_secret = "xxx"
-access_token = "xxx"
-access_secret = "xxx"
-
 setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
 
 #favoritos = favorites("copano", n=200)
@@ -33,6 +28,7 @@ tuits_ElDebateRadial = searchTwitter("#ElDebateRadial", n = 5000, geocode='-33.4
 tuits_Exalmar = searchTwitter("Exalmar", n = 5000, geocode='-33.4489,-70.6693,20mi')
 tuits_NoTeDeclararonReoPorLindo = searchTwitter("#NoTeDeclararonReoPorLindo", n = 5000, geocode='-33.4489,-70.6693,20mi')
 tuits_partidos_politicos = searchTwitter("partidos politicos", n = 5000, geocode='-33.4489,-70.6693,20mi')
+tuits_transparencia = searchTwitter("transparencia", n = 5000, geocode='-33.4489,-70.6693,20mi')
 
 tuits_Sanchez = searchTwitter("Beatriz Sanchez", n = 5000, geocode='-33.4489,-70.6693,20mi')
 tuits_Mayol = searchTwitter("Mayol", n = 5000, geocode='-33.4489,-70.6693,20mi')
@@ -67,6 +63,10 @@ write_lines(textos_NoTeDeclararonReoPorLindo, "twitter/textos_NoTeDeclararonReoP
 textos_partidos_politicos = vector(mode = "character", length = length(tuits_partidos_politicos))
 for (i in 1:length(textos_partidos_politicos)) textos_partidos_politicos[i] = tuits_partidos_politicos[[i]]$getText()
 write_lines(textos_partidos_politicos, "twitter/textos_partidos_politicos.txt")
+
+textos_transparencia = vector(mode = "character", length = length(tuits_transparencia))
+for (i in 1:length(textos_transparencia)) textos_transparencia[i] = tuits_transparencia[[i]]$getText()
+write_lines(textos_transparencia, "twitter/textos_transparencia.txt")
 
 textos_Sanchez = vector(mode = "character", length = length(tuits_Sanchez))
 for (i in 1:length(textos_Sanchez)) textos_Sanchez[i] = tuits_Sanchez[[i]]$getText()
