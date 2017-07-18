@@ -97,7 +97,7 @@ Columns meaning:
 * unidad_monetaria: Chilean peso (CLP)
 * columns "enero" (january) to "diciembre" (december) refer to the spent money on a certain month
 
-*item_de_gastos* contemplates:
+*item_de_gastos* contemplates thirteen (13) categories:
 
 * Gastos de Personal (employees expenditure)
 * Gastos de adquisicion de bienes y servicios o gastos corrientes (goods, services or common expenditure)
