@@ -65,11 +65,11 @@ Significado de las columnas:
 * nombre_organismo: Nombre oficial del partido
 * anio_informado: Año informado
 * trimestre_informado: Trimestre informado
-* item_ingresos: Nature of declared money
-* unidad_monetaria: Chilean peso (CLP)
-* monto: Declared money amount (integer variable)
+* item_ingresos: Naturaleza del dinero declarado
+* unidad_monetaria: Peso chileno (CLP)
+* monto: Cantidad de dinero declarada
 
-*item_ingresos* contemplates eight (8) categories:
+*item_ingresos* contempla (8) categorías:
 
 * Cotizaciones (established contributions)
 * Donaciones (donations)
@@ -98,8 +98,8 @@ Significado de las columnas:
 * anio_informado: Año informado
 * trimestre_informado: Trimestre informado
 * item_de_gastos: Expenditure on different categories
-* unidad_monetaria: Chilean peso (CLP)
-* columns "enero" (january) to "diciembre" (december) refer to the spent money on a certain month
+* unidad_monetaria: Peso chileno (CLP)
+* Las columnas "enero" (january) a "diciembre" (december) se refieren al gasto efectuado en un mes
 
 *item_de_gastos* contemplates thirteen (13) categories:
 
@@ -134,10 +134,10 @@ Significado de las columnas:
 * anio_informado: Año informado
 * trimestre_informado: Trimestre informado
 * item_ingresos: Income on different categories
-* unidad_monetaria: Chilean peso (CLP)
-* columns "enero" (january) to "diciembre" (december) refer to the spent money on a certain month
+* unidad_monetaria: Peso chileno (CLP)
+* Las columnas "enero" (january) a "diciembre" (december) se refieren al gasto efectuado en un mes
 
-*item_de_gastos* contemplates thirteen (6) categories:
+*item_de_gastos* contempla seis (6) categories:
 
 * Cuotas y aportes de afiliados (members fees and members contributions)
 * Rendimientos de patrimonio (capital revenue of assets)
@@ -162,17 +162,17 @@ Significado de las columnas:
 * nombre_organismo: Nombre oficial del partido
 * anio_informado: Año informado
 * trimestre_informado: Trimestre informado
-* individualizacion_contrato: Type of activity (e.g. printing campaign materials)
+* individualizacion_contrato: Tipo de actividad (e.g. impresión de folletos)
 * contratista: Contractor
-* rut: Contractor tax ID
-* socios_o_accionistas: Contractor entity's shareholders or associates
-* objeto_contratacion: Reason to hire a contractor
-* unidad_monetaria: Chilean peso (CLP)
-* monto: Declared money amount (integer variable)
-* fecha_inicio_contrato: Contract start date
-* fecha_termino_contrato: Contract end date
-* link_contrato: Link (URL) to contract
-* link_modificaciones: Link (URL) to modifications
+* rut: RUT del contratista
+* socios_o_accionistas: Accionistas o socios de la empresa
+* objeto_contratacion: Motivo de contratación
+* unidad_monetaria: Peso chileno (CLP)
+* monto: Cantidad de dinero declarada
+* fecha_inicio_contrato: Fecha de inicio del contrato
+* fecha_termino_contrato: Fecha de término del contrato
+* link_contrato: Link (URL) al contrato
+* link_modificaciones: Link (URL) a las modificaciones
 
 ## `registration_of_contributions_to_electoral_campaigns.csv`
 
@@ -190,9 +190,9 @@ Significado de las columnas:
 * nombre_organismo: Nombre oficial del partido
 * anio_informado: Año informado
 * trimestre_informado: Trimestre informado
-* persona_que_efectua_aporte: Individual who makes the contribution
-* tipo_de_aporte: Kind of contribution
-* valorizacion_en_pesos: Value in chilean peso (CLP)
+* persona_que_efectua_aporte: Persona que realiza el aporte
+* tipo_de_aporte: Tipo de aporte
+* valorizacion_en_pesos: Valor en peso chileno (CLP)
 
 ## `registration_of_expenses_incurred_in_election_campaigns.csv`
 
@@ -210,11 +210,11 @@ Significado de las columnas:
 * nombre_organismo: Nombre oficial del partido
 * anio_informado: Año informado
 * trimestre_informado: Trimestre informado
-* tipo_de_campania: Type of campaign
-* item: Item to declare
-* unidad_monetaria: Chilean peso (CLP)
-* monto: Amount of money
-* estado: Status
+* tipo_de_campania: Tipo de campaña
+* item: Item a declarar
+* unidad_monetaria: Peso chileno (CLP)
+* monto: Cantidad de dinero
+* estado: Estado
 
 ## `transfers_of_funds.csv`
 
@@ -230,13 +230,13 @@ Vista previa:
 * nombre_organismo: Nombre oficial del partido
 * anio_informado: Año informado
 * trimestre_informado: Trimestre informado
-* fecha_transferencia: Date of transfer
-* unidad_monetaria: Chilean peso (CLP)
-* monto: Amount of money
-* objeto_transferencia: Reasons to transfer
-* persona_juridica_receptora: Legal person that receives the money
-* rut_persona_juridica: Legal person tax ID
-* persona_natural_receptora: Natural person that receives the money
+* fecha_transferencia: Fecha de la transferencia
+* unidad_monetaria: Peso chileno (CLP)
+* monto: Cantidad de dinero
+* objeto_transferencia: Razones para realizar transferencia
+* persona_juridica_receptora: Persona jurídica que recibe del dinero
+* rut_persona_juridica: RUT persona jurídica
+* persona_natural_receptora: Persona natural que recibe el dinero
 
 ## Dump
 
