@@ -6,11 +6,15 @@ Here are the datasets for Datacampfire Hackathon.
 
 ## Advisory Board for Transparency datasets
 
+This section covers the folders `active_transparency/datos_corregidos`, `active_transparency/datos_originales` and `active_transparency/dump`.
+
 Some of the data used for the Hackathon comes from the [Advisory Board for Transparency](http://www.consejotransparencia.cl/), after they consolidate the information of all the active political parties in Chile on their FTP server, and that information covers 16 out of the 24 existing parties.
 
 Political parties release their financial information and make changes from time to time, so this datasets reveal a snapshot in time that might change after imputations and corrections.
 
 You'll see that there are not all parties on all the datasets. Unfortunately this is something beyond our means.
+
+The items covered here are demanded by the laws in force in Chile. This information covers 21 spreadsheets that political parties send to que Advisory Board since last year. Here we selected eight (8) spreadsheets that we cleaned and that are available at https://partidospublicos.cl/ but we do not have the most updated information because we rely on snapshots that you can see at https://datos.partidospublicos.cl/. 
 
 ## Clean datasets
 
@@ -233,3 +237,7 @@ Table preview:
 * persona_juridica_receptora: Legal person that receives the money
 * rut_persona_juridica: Legal person tax ID
 * persona_natural_receptora: Natural person that receives the money
+
+## Dump
+
+The dump folder is a compressed dump of https://partidospublicos.cl/ application database. This database can be imported with Ruby or SQL and covers financial information sent every monday, those are thsame files that can be found in https://datos.partidospublicos.cl/.
