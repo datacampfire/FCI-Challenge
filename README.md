@@ -242,11 +242,11 @@ Vista previa:
 
 ## Dump
 
-The dump folder is a compressed dump of https://partidospublicos.cl/ application database. This database can be imported with Ruby or SQL and covers financial information sent every monday, those are thsame files that can be found in https://datos.partidospublicos.cl/.
+La carpeta dump contiene una copia de los archivos disponibles en la aplicación de https://partidospublicos.cl/. Esta base de datos se puede importar mediante Ruby o SQL y cubre información financiera de caracter semanal, contiene todos los datos disponibles en https://datos.partidospublicos.cl/.
 
 # Congress
 
-This section covers the folder `diputados/` and covers and contemplates information and contemplates these files:
+Esta sección contempla la carpeta `diputados/` and covers and contemplates information and contemplates these files:
 
 ## `diputados.csv`
 
@@ -260,15 +260,15 @@ Vista previa:
 
 Significado de las columnas:
 
-* diputado_id: ID of the congressperson
-* nombre: Name of the congressperson
-* comite: Comission that the congressperson integrates in Congress
-* img_url: Link (URL) to picture of the congressperson
-* fecha_namcimiento: Date of birth of the congressperson
-* profesion: Studies of the congressperson
-* region: Region of the congressperson
-* distrito: District of the congressperson
-* partido: Political party of the congressperson
+* diputado_id: ID del diputado
+* nombre: Nombre del diputado
+* comite: Comisión que integra el diputado
+* img_url: Link (URL) a la foto del diputado
+* fecha_namcimiento: Fecha de nacimiento del diputado
+* profesion: Estudios del diputado
+* region: Región del diputado
+* distrito: Distrito del diputado
+* partido: Partido político del diputado
 
 ## `votacion_detalle.csv`
 
@@ -282,19 +282,19 @@ Vista previa:
 
 Significado de las columnas:
 
-* votacion_id: ID of legislative session
-* vote: What the congressperson said
-* diputado_id: ID of the congressperson
+* votacion_id: ID de la sesión legislativa
+* vote: Voto manifestado
+* diputado_id: ID del diputado
 
 *vote* can be "a favor" (approves), "en contra" (rejects) or "ausente" (absent)
 
 # Tweets
 
-This section covers the folder `tweets/` and covers different tweets related to hashtags with political content during year 2017.
+Esta sección contempla la carpeta `tweets/` la que contiene tweets relacionados a contenido político durante el año 2017.
 
 # Google
 
-This section covers the folder `google/` and covers different news related to political content during year 2017.
+Esta sección contempla la carpeta `google/` la que contiene noticias relacionadas a la política.
 
 # English README
 
@@ -302,7 +302,7 @@ Here are the datasets for Datacampfire Hackathon.
 
 ## Advisory Board for Transparency datasets
 
-This section covers the folders `active_transparency/datos_corregidos`, `active_transparency/datos_originales` and `active_transparency/dump`.
+Esta sección contempla la carpetas `active_transparency/datos_corregidos`, `active_transparency/datos_originales` and `active_transparency/dump`.
 
 Some of the data used for the Hackathon comes from the [Advisory Board for Transparency](http://www.consejotransparencia.cl/), after they consolidate the information of all the active political parties in Chile on their FTP server, and that information covers 16 out of the 24 existing parties.
 
@@ -536,11 +536,11 @@ Table preview:
 
 ## Dump
 
-The dump folder is a compressed dump of https://partidospublicos.cl/ application database. This database can be imported with Ruby or SQL and covers financial information sent every monday, those are thsame files that can be found in https://datos.partidospublicos.cl/.
+The dump folder is a compressed dump of https://partidospublicos.cl/ application database. This database can be imported with Ruby or SQL and covers financial information sent every monday, those are the same files that can be found in https://datos.partidospublicos.cl/.
 
 # Congress
 
-This section covers the folder `diputados/` and covers and contemplates information and contemplates these files:
+Esta sección contempla la carpeta `diputados/` and covers and contemplates information and contemplates these files:
 
 ## `diputados.csv`
 
@@ -584,8 +584,8 @@ Columns meaning:
 
 # Tweets
 
-This section covers the folder `tweets/` and covers different tweets related to hashtags with political content during year 2017.
+Esta sección contempla la carpeta `tweets/` and covers different tweets related to hashtags with political content during year 2017.
 
 # Google
 
-This section covers the folder `google/` and covers different news related to political content during year 2017.
+Esta sección contempla la carpeta `google/` and covers different news related to political content during year 2017.
