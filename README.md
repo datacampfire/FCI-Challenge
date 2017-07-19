@@ -23,7 +23,7 @@ You'll see that there are not all parties on all the datasets. Unfortunately thi
 * `registration_of_contributions_to_electoral_campaigns.csv`: Registration of contributions to electoral campaigns
 * `expenses_of_political_parties_in_accordance_with_the_law.csv`: Expenses of political parties in accordance with the law
 
-## Clean datasets description
+## Clean datasets description
 
 ### `affiliate_quotes.csv`
 
@@ -92,7 +92,7 @@ Columns meaning:
 * codigo_organismo: Party ID used by the Advisory Board
 * nombre_organismo: Official parties names
 * anio_informado: Reported year
-* trimestre_informado: Reported quarted
+* trimestre_informado: Reported quarter
 * item_de_gastos: Expenditure on different categories
 * unidad_monetaria: Chilean peso (CLP)
 * columns "enero" (january) to "diciembre" (december) refer to the spent money on a certain month
@@ -112,3 +112,124 @@ Columns meaning:
 * Creditos de largo plazo, inversiones y valores de operaciones de capital (long run loans, investments and capital operations values)
 * Gastos de las actividades de preparacion de candidatos a cargos de eleccion popular (campaign activities expenditure)
 * Gastos de las actividades de formacion de militantes (members training expenditure)
+
+## `income_of_political_parties_in_accordance_with_the_law.csv`
+
+Table preview:
+
+|codigo_organismo|nombre_organismo                      |anio_informado|trimestre_informado|item_ingresos                                            |unidad_monetaria|enero   |febrero |marzo    |abril|mayo|junio|julio|agosto|septiembre|octubre  |noviembre|diciembre|
+|----------------|--------------------------------------|--------------|-------------------|---------------------------------------------------------|----------------|--------|--------|---------|-----|----|-----|-----|------|----------|---------|---------|---------|
+|PP007           |Partido Comunista de Chile (PCCH)     |2017          |Ene - Mar          |Cuotas y aportes de afiliados                            |Pesos           |19764510|42481000|27012800 |0    |0   |0    |0    |0     |0         |0        |0        |0        |
+|PP007           |Partido Comunista de Chile (PCCH)     |2017          |Ene - Mar          |Rendimientos de patrimonio                               |Pesos           |0       |0       |528720   |0    |0   |0    |0    |0     |0         |0        |0        |0        |
+|PP007           |Partido Comunista de Chile (PCCH)     |2017          |Ene - Mar          |Aportes personas naturales                               |Pesos           |0       |0       |0        |0    |0   |0    |0    |0     |0         |0        |0        |0        |
+
+Columns meaning:
+
+* codigo_organismo: Party ID used by the Advisory Board
+* nombre_organismo: Official parties names
+* anio_informado: Reported year
+* trimestre_informado: Reported quarter
+* item_ingresos: Income on different categories
+* unidad_monetaria: Chilean peso (CLP)
+* columns "enero" (january) to "diciembre" (december) refer to the spent money on a certain month
+
+*item_de_gastos* contemplates thirteen (6) categories:
+
+* Cuotas y aportes de afiliados (members fees and members contributions)
+* Rendimientos de patrimonio (capital revenue of assets)
+* Aportes personas naturales (natural person donation)
+* Aportes del estado Ley N18603 (State capital contribution)
+* Rendimiento por actividades (capital revenue of activities)
+* Cuanta global de las cuotas y aportes de sus afiliados (final result of fees and members contributions)
+
+## `payroll_over_20_utm.csv`
+
+Table preview:
+
+|codigo_organismo|nombre_organismo                      |anio_informado|trimestre_informado                          |individualizacion_contrato                                                                       |contratista                                                                   |rut         |socios_o_accionistas                                                                                                 |objeto_contratacion                                                                                    |unidad_monetaria|monto    |fecha_inicio_contrato|fecha_termino_contrato|link_contrato                                                                                                               |link_modificaciones|
+|----------------|--------------------------------------|--------------|---------------------------------------------|-------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|------------|---------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|----------------|---------|---------------------|----------------------|----------------------------------------------------------------------------------------------------------------------------|-------------------|
+|PP007           |Partido Comunista de Chile (PCCH)     |2017          |Ene - Mar                                    |Arriendo de espacio radial                                                                       |Compañía de Radio y Televisión Nuevo Mundo S.A.                               |99.510.820-8|Julio Ugas y Boris Navia                                                                                             |Arriendo espacio radial                                                                                |Pesos           |5000000  |2017-01-03           |2017-01-03            |http://www.pcchile.cl                                                                                                       |No Aplica          |
+|PP007           |Partido Comunista de Chile (PCCH)     |2017          |Ene - Mar                                    |Impresión de materiales                                                                          |Eduardo Inostroza Acosta                                                      |8.663.592-5 |Eduardo Inostroza Acosta                                                                                             |Impresión de 2000 libros                                                                               |Pesos           |4760000  |2017-01-05           |2017-01-05            |http://www.pcchile.cl                                                                                                       |No Aplica          |
+|PP007           |Partido Comunista de Chile (PCCH)     |2017          |Ene - Mar                                    |Arriendo de carpas                                                                               |Todofiestas SPA                                                               |76.241.311-6|No Aplica                                                                                                            |Arriendo carpa y mesas Fiesta de los Abrazos
+
+Columns meaning:
+
+* codigo_organismo: Party ID used by the Advisory Board
+* nombre_organismo: Official parties names
+* anio_informado: Reported year
+* trimestre_informado: Reported quarter                         
+* individualizacion_contrato: Type of activity (e.g. printing campaign materials)
+* contratista: Contractor
+* rut: Contractor tax ID
+* socios_o_accionistas: Contractor entity's shareholders or associates
+* objeto_contratacion: Reason to hire a contractor
+* unidad_monetaria: Chilean peso (CLP)
+* monto: Declared money amount (integer variable)
+* fecha_inicio_contrato: Contract start date
+* fecha_termino_contrato: Contract end date
+* link_contrato: Link (URL) to contract
+* link_modificaciones: Link (URL) to modifications
+
+## `registration_of_contributions_to_electoral_campaigns.csv`
+
+Table preview:
+
+|codigo_organismo|nombre_organismo                      |anio_informado|trimestre_informado|persona_que_efectua_aporte               |tipo_de_aporte                                                              |valorizacion_en_pesos|
+|----------------|--------------------------------------|--------------|-------------------|-----------------------------------------|----------------------------------------------------------------------------|---------------------|
+|PP007           |Partido Comunista de Chile (PCCH)     |2017          |Ene - Mar          |Patricio Iván Sanhueza Salinas           |Persona Natural                                                             |200000               |
+|PP010           |Partido Ecologista Verde (PEV)        |2017          |Ene - Mar          |Estado de Chile                          |Aporte en Dinero                                                            |NA                   |
+|PP011           |Partido Evolución Política (Evópoli)  |2016          |Oct - Dic          |Servel                                   |Aportes en Dinero                                                           |278135883            |
+
+Columns meaning:
+
+* codigo_organismo: Party ID used by the Advisory Board
+* nombre_organismo: Official parties names
+* anio_informado: Reported year
+* trimestre_informado: Reported quarter                         
+* persona_que_efectua_aporte: Individual who makes the contribution
+* tipo_de_aporte: Kind of contribution
+* valorizacion_en_pesos: Value in chilean peso (CLP)
+
+## `registration_of_expenses_incurred_in_election_campaigns.csv`
+
+ Table preview:
+
+|codigo_organismo|nombre_organismo                                                      |anio_informado|trimestre_informado|tipo_de_campania|item                                                                                                                  |unidad_monetaria|monto    |estado                         |
+|----------------|----------------------------------------------------------------------|--------------|-------------------|----------------|----------------------------------------------------------------------------------------------------------------------|----------------|---------|-------------------------------|
+|PP006           |Partido Movimiento Independiente Regionalista Agrario y Social (MIRAS)|2016          |Oct - Dic          |Alcaldicia      |-                                                                                                                     |Pesos           |7241839  |Pendiente de aprobación        |
+|PP007           |Partido Comunista de Chile (PCCH)                                     |2017          |Ene - Mar          |Alcaldicia      |propaganda                                                                                                            |Pesos           |291075814|Aprobado                       |
+|PP007           |Partido Comunista de Chile (PCCH)                                     |2017          |Ene - Mar          |Concejal        |propaganda                                                                                                            |Pesos           |268213698|Aprobado                       |
+
+Columns meaning:
+
+* codigo_organismo: Party ID used by the Advisory Board
+* nombre_organismo: Official parties names
+* anio_informado: Reported year
+* trimestre_informado: Reported quarter                         
+* tipo_de_campania: Type of campaign
+* item: Item to declare
+* unidad_monetaria: Chilean peso (CLP)
+* monto: Amount of money
+* estado: Status
+
+## `transfers_of_funds.csv`
+
+Table preview:
+
+|codigo_organismo|nombre_organismo                                                      |anio_informado|trimestre_informado|fecha_transferencia|unidad_monetaria|monto   |objeto_transferencia                                                             |persona_juridica_receptora                                        |rut_persona_juridica     |persona_natural_receptora          |
+|----------------|----------------------------------------------------------------------|--------------|-------------------|-------------------|----------------|--------|---------------------------------------------------------------------------------|------------------------------------------------------------------|-------------------------|-----------------------------------|
+|PP006           |Partido Movimiento Independiente Regionalista Agrario y Social (MIRAS)|2016          |Oct - Dic          |NA                 |Pesos           |1337220 |Preparacion de Candidatos                                                        |No Aplica                                                         |8796664-2                |-                                  |
+|PP006           |Partido Movimiento Independiente Regionalista Agrario y Social (MIRAS)|2016          |Oct - Dic          |NA                 |Pesos           |0       |Participación Juvenil                                                            |No Aplica                                                         |No Aplica                |-                                  |
+|PP006           |Partido Movimiento Independiente Regionalista Agrario y Social (MIRAS)|2016          |Oct - Dic          |NA                 |Pesos           |2065091 |Participación Femenina                                                           |No Aplica                                                         |No Aplica                |-                                  |
+
+* codigo_organismo: Party ID used by the Advisory Board
+* nombre_organismo: Official parties names
+* anio_informado: Reported year
+* trimestre_informado: Reported quarter
+* fecha_transferencia: Date of transfer
+* unidad_monetaria: Chilean peso (CLP)
+* monto: Amount of money
+* objeto_transferencia: Reasons to transfer
+* persona_juridica_receptora: Legal person that receives the money
+* rut_persona_juridica: Legal person tax ID
+* persona_natural_receptora: Natural person that receives the money
