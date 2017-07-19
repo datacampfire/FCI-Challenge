@@ -241,3 +241,55 @@ Table preview:
 ## Dump
 
 The dump folder is a compressed dump of https://partidospublicos.cl/ application database. This database can be imported with Ruby or SQL and covers financial information sent every monday, those are thsame files that can be found in https://datos.partidospublicos.cl/.
+
+# Congress
+
+This section covers the folder `diputados/` and covers and contemplates information and contemplates these files:
+
+## `diputados.csv` 
+
+Table preview:
+
+|diputado_id|nombre                               |comite                                 |img_url              |fecha_namcimiento       |profesion                                                                                                           |region|distrito|partido|
+|-----------|-------------------------------------|---------------------------------------|---------------------|------------------------|--------------------------------------------------------------------------------------------------------------------|------|--------|-------|
+|177        |Felipe Letelier Norambuena           |Partido Por la Democracia              |/img.aspx?prmid=g177 |11 de mayo de 1956      |Técnico agrícola                                                                                                    |VI    |33      |PPD    |
+|802        |Sergio Aguiló Melo                   |Partido Comunista - Izquierda Ciudadana|/img.aspx?prmid=g802 |9 de febrero de 1953    |Ingeniero Comercial                                                                                                 |VII   |37      |IC     |
+|811        |Ramón Barros Montero                 |Unión Demócrata Independiente          |/img.aspx?prmid=g811 |5 de marzo de 1958      |Ingeniero Agrónomo                                                                                                  |VI    |35      |UDI    |
+
+Columns meaning:
+
+* diputado_id: ID of the congressperson
+* nombre: Name of the congressperson
+* comite: Comission that the congressperson integrates in Congress
+* img_url: Link (URL) to picture of the congressperson
+* fecha_namcimiento: Date of birth of the congressperson
+* profesion: Studies of the congressperson
+* region: Region of the congressperson
+* distrito: District of the congressperson
+* partido: Political party of the congressperson
+
+## `votacion_detalle.csv` 
+
+Table preview:
+
+|votacion_id|vote   |diputado_id|
+|-----------|-------|-----------|
+|19192      |A favor|802        |
+|19192      |A favor|839        |
+|19192      |A favor|942        |
+
+Columns meaning:
+
+* votacion_id: ID of legislative session
+* vote: What the congressperson said
+* diputado_id: ID of the congressperson
+
+*vote* can be "a favor" (approves), "en contra" (rejects) or "ausente" (absent)
+
+# Tweets
+
+This section covers the folder `tweets/` and covers different tweets related to hashtags with political content during year 2017.
+
+# Google
+
+This section covers the folder `google/` and covers different news related to political content during year 2017.
