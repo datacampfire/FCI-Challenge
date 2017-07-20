@@ -10,13 +10,13 @@ Acá están los datasets para la Hackathon de Datacampfire.
 
 Esta sección cubre las carpetas `active_transparency/datos_corregidos`, `active_transparency/datos_originales` y `active_transparency/dump`.
 
-Parte de la data usada en esta hackathon proviene del [Consejo para la transparencia](http://www.consejotransparencia.cl/), luego de que ellos consolidan toda la información de los partidos políticos activos en Chile en su servidor FTP, y esa información cubre 16 de los 24 partidos existentes.
+Parte de los datos usados en esta hackathon provienen del Consejo para la Transparencia, luego de que ellos consolidan toda la información de los partidos políticos activos en Chile en su servidor FTP, y esa información cubre 16 de los 24 partidos existentes.
 
-Los partidos políticos liberan su información con cambios e imputaciones, estos datasets reflejan la información vigente en un momento del tiempo por lo que podría cambiar en el futuro.
+Los partidos políticos liberan su información con cambios e imputaciones. Estas bases de datos (Datasets) reflejan la información vigente en un momento del tiempo por lo que podría cambiar en el futuro.
 
 No todos los partidos aparecen en estos datasets. Esto no depende de nosotros.
 
-Los items presentados son los que la legilación vigente en Chile contempla. Esto incluye 21 hojas de cálculo que los partidos envían al Consejo desde el año pasado. Hemos seleccionado ocho (8) hojas que hemos limpiado, las cuales están disponibles en https://partidospublicos.cl/  pero no tenemos la información más reciente ya que dependemos de los snapshots disponibles en https://datos.partidospublicos.cl/.
+Los items presentados son los que la legislación vigente en Chile contempla. Esto incluye 21 hojas de cálculo que los partidos envían al Consejo desde el año pasado. Hemos seleccionado ocho (8) hojas que hemos limpiado, las cuales están disponibles en https://partidospublicos.cl/ pero no tenemos la información más reciente ya que dependemos de los snapshots disponibles en https://datos.partidospublicos.cl/.
 
 ## Clean datasets
 
