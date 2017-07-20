@@ -1,7 +1,5 @@
 # FCI-Challenge
 
-# FCI-Challenge
-
 # README en Castellano
 
 Acá están los datasets para la Hackathon de Datacampfire.
