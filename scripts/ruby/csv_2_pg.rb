@@ -53,7 +53,7 @@ begin
         row_count += 1
         row_statement = "INSERT INTO " + tablename + " VALUES("
         column_names.each do |column|
-          row_statement += "\'" + row[column].to_s + "\',"
+          row_statement += "\'" + row[column].to_s.gsub(/'/,"\\'") + "\',"
         end
         row_statement = row_statement[0..-2]
         row_statement += ')'
