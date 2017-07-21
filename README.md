@@ -16,6 +16,8 @@ No todos los partidos aparecen en estos datasets. Esto no depende de nosotros.
 
 Los items presentados son los que la legislación vigente en Chile contempla. Esto incluye 21 hojas de cálculo que los partidos envían al Consejo desde el año pasado. Hemos seleccionado ocho (8) hojas que hemos limpiado, las cuales están disponibles en https://partidospublicos.cl/ pero no tenemos la información más reciente ya que dependemos de los snapshots disponibles en https://datos.partidospublicos.cl/.
 
+Existe un manual de transparencia activa para los partidos políticos que puede ayudar a comprender las planillas del cplt en la url siguiente: https://partidospublicos.cl/manual .
+
 ## Clean datasets
 
 * `contributions_donations_assignments_and_others.csv`: Contribuciones, donaciones, asignaciones y otros
@@ -309,6 +311,8 @@ Political parties release their financial information and make changes from time
 You'll see that there are not all parties on all the datasets. Unfortunately this is something beyond our means.
 
 The items covered here are demanded by the laws in force in Chile. This information covers 21 spreadsheets that political parties send to que Advisory Board since last year. Here we selected eight (8) spreadsheets that we cleaned and that are available at https://partidospublicos.cl/ but we do not have the most updated information because we rely on snapshots that you can see at https://datos.partidospublicos.cl/.
+
+There is an active transparency data guide that can help understand the cplt csv files in the following url: https://partidospublicos.cl/manual
 
 ## Clean datasets
 
