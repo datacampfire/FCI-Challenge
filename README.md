@@ -566,6 +566,21 @@ Columns meaning:
 * distrito: District of the congressperson
 * partido: Political party of the congressperson
 
+## `votacion_metadata.csv`
+
+Table preview:
+
+| votacion_id|boletin |dia |mes |  ano|hora     |materia                                                                                                                                                                                                |articulo                                                       | sesion|tramite                          |tipo_de_votacion |quorum            |resultado |boletin_desc |observaciones |
+|-----------:|:-------|:---|:---|----:|:--------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------|------:|:--------------------------------|:----------------|:-----------------|:---------|:------------|:-------------|
+|       19192|9047-21 |13  |mar | 2014|17:39:00 |complementa regulación de centros de acopio que indica.                                                                                                                                                |                                                               |      2|primer trámite / primer informe  |general          |quorum calificado |aprobado  |             |              |
+|       19193|9047-21 |13  |mar | 2014|17:39:00 |complementa regulación de centros de acopio que indica.                                                                                                                                                |                                                               |      2|primer trámite / primer informe  |particular       |quorum calificado |aprobado  |             |              |
+|       19194|9273-05 |13  |mar | 2014|17:39:00 |concede aporte familiar permanente de marzo y ajusta norma que indica.                                                                                                                                 |                                                               |      2|primer trámite / primer informe  |general          |quorum simple     |aprobado  |             |              |
+|       19197|9273-05 |13  |mar | 2014|17:40:00 |concede aporte familiar permanente de marzo y ajusta norma que indica.                                                                                                                                 |inadmisibilidad indicación que agrega artículo 10 al proyecto. |      2|primer trámite / primer informe  |unica            |quorum simple     |aprobado  |             |              |
+|       19198|9273-05 |13  |mar | 2014|17:40:00 |concede aporte familiar permanente de marzo y ajusta norma que indica.                                                                                                                                 |inciso primero del artículo 1°                                 |      2|primer trámite / primer informe  |particular       |quorum simple     |aprobado  |             |              |
+|       19212|9029-14 |18  |mar | 2014|13:51:00 |modifica ley n° 20.671, con objeto de suprimir el límite máximo para regularizar ampliaciones en viviendas sociales, siempre que la superficie edificada total, no exceda de noventa metros cuadrados. |                                                               |      3|segundo trámite / primer informe |general          |quorum simple     |aprobado  |             |              |
+
+Variable names are self-explanatory, for example for the `votation_id` 25870 the medatada is extracted from this url: https://www.camara.cl/trabajamos/sala_votacion_detalle.aspx?prmID=25870
+
 ## `votacion_detalle.csv`
 
 Table preview:
